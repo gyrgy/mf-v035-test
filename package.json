@@ -1,0 +1,24 @@
+{
+  "name": "root",
+  "private": true,
+  "version": "0.0.1",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "start": "lerna run start --parallel",
+    "build": "lerna run build --parallel",
+    "build-sourcemaps": "lerna run build-sourcemaps --parallel",
+    "build-and-serve": "npm run build && concurrently \"lerna run serve --parallel\"",
+    "serve": "lerna run serve --parallel",
+    "tsc": "lerna run tsc --parallel",
+    "lint": "lerna run lint --parallel",
+    "format": "lerna run format --parallel"
+  },
+  "devDependencies": {
+    "concurrently": "8.2.2",
+    "lerna": "8.1.6",
+    "express": "4.19.2",
+    "cors": "2.8.5"
+  }
+}

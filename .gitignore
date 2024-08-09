@@ -1,0 +1,26 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+**/*node_modules
+**/*.pnp
+**/*.pnp.js
+
+# buid stats
+**/*stats
+
+# production
+**/*build
+**/*dist
+
+# misc
+**/*.DS_Store
+
+# IntelliJ
+.idea/
+
+# debug logs
+**/*npm-debug.log*
+**/*yarn-debug.log*
+**/*yarn-error.log*
+lerna-debug.log
+

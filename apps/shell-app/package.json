@@ -1,0 +1,46 @@
+{
+  "name": "shell-app",
+  "version": "0.0.1",
+  "private": true,
+  "author": "gyorgy",
+  "license": "MIT",
+  "scripts": {
+    "start": "rspack serve -c ./rspack.config.js",
+    "build": "rspack build -c ./rspack.config.js",
+    "build-sourcemaps": "SOURCE_MAPS=true rspack build -c ./rspack.config.js",
+    "build-analyze": "RSDOCTOR=true rspack build -c ./rspack.config.js",
+    "serve": "node serve.js",
+    "tsc": "tsc --noEmit",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx src/ --fix --max-warnings=0 --no-cache",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,md}\""
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@rspack/cli": "0.7.5",
+    "@rspack/core": "0.7.5",
+    "@rspack/dev-server": "0.7.5",
+    "@rspack/plugin-react-refresh": "0.7.5",
+    "react-refresh": "0.14.2",
+    "@module-federation/enhanced": "0.3.5",
+    "@rsdoctor/rspack-plugin": "0.3.8",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "dotenv": "16.4.5",
+    "@typescript-eslint/eslint-plugin": "7.16.1",
+    "@typescript-eslint/parser": "7.16.1",
+    "eslint": "8.56.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-jsx-a11y": "6.9.0",
+    "eslint-plugin-react": "7.35.0",
+    "eslint-plugin-react-hooks": "4.6.2",
+    "eslint-import-resolver-typescript": "3.6.1",
+    "prettier": "3.3.3",
+    "eslint-config-prettier": "9.1.0",
+    "typescript": "5.5.3",
+    "@types/node": "20.14.11"
+  }
+}

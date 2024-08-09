@@ -1,0 +1,12 @@
+{
+  "extends": "../../shared/tsconfig.shared",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "src/*": ["src/*"],
+      "shared/*": ["../../shared/*"]
+    },
+    "types": ["node"]
+  },
+  "include": ["./src/**/*", "../../shared/shellProviderTypes.d.ts"]
+}
